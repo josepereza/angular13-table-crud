@@ -95,7 +95,7 @@ console.log('add-edit', this.idEmpleado)
  
 
   editarEmpleado(empleado:Empleado):void{
-    this.empleadoService.editarEmpleado(empleado,this.idEmpleado);
+    this.empleadoService.editarEmpleado(empleado);
 
     this.snackBar.open('El empleado fue actualizado con exito','',{
       duration: 3000

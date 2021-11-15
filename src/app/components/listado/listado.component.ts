@@ -38,7 +38,7 @@ export class ListadoComponent implements AfterViewInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
   eliminarEmpleado(i:number){
-    console.log('eliminar', i,i+1)
+    console.log('eliminar', i)
     this.empleadoService.eliminarEmpleado(i)
     this.dataSource.data=this.empleadoService.EMPLEADOS
   }

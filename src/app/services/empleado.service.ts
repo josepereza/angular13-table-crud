@@ -32,7 +32,7 @@ export class EmpleadoService {
   buscarEmpleado(id: number): Empleado | undefined {
     return this.EMPLEADOS.find(p => p.id == id);
   }
-  editarEmpleado(empleado: Empleado, id: number): void {
+  editarEmpleado(empleado: Empleado): void {
     console.log('service', empleado)
     this.findEmpleado = this.EMPLEADOS.find(p => p.id == empleado.id)!
     this.findEmpleado.id = empleado.id;
